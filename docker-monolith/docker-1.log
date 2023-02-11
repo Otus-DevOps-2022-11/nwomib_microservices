@@ -1,0 +1,5 @@
+root@work:/home/appuser# docker commit 9b49b32948e1 nwomib/ubuntu-tmp-file
+sha256:7bdeb428641e0097cb24d73b4664063911ea246bfb1efa98509b5f549f5d1129
+root@work:/home/appuser# docker images
+REPOSITORY               TAG       IMAGE ID       CREATED          SIZE
+nwomib/ubuntu-tmp-file   latest    7bdeb428641e   19 seconds ago   142MB
