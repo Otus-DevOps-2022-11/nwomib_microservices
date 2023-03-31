@@ -1,0 +1,5 @@
+❯ sudo docker commit 8221699945d1 valeriy/ubuntu-tmp-file
+sha256:0cdfe5efef01904a6c3da74f9d54489525b0d2583dc24eb2688ce7030465e134
+❯ sudo docker images
+REPOSITORY                TAG       IMAGE ID       CREATED          SIZE
+valeriy/ubuntu-tmp-file   latest    0cdfe5efef01   12 seconds ago   63.1MB
