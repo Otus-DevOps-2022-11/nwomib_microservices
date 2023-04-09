@@ -1,18 +1,23 @@
 apiVersion: apps/v1
 kind: Deployment
-metadata:
-  name: ui-deployment
-spec:
-  replicas: 1
+metadata: 
+  name: ui
+  labels:
+    app: reddit
+    component: ui
+spec: 
+  replicas: 3
   selector:
     matchLabels:
-      app: ui
-  template:
+      app: reddit
+      component: ui
+  template: 
     metadata:
-      name: ui
+      name: ui-pod
       labels:
-        app: ui
+        app: reddit
+        component: ui
     spec:
       containers:
-      - image: nwomib/ui
+      - image: nwomib/ui 
         name: ui
