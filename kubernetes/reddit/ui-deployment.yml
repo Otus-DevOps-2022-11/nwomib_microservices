@@ -1,17 +1,17 @@
 apiVersion: apps/v1
 kind: Deployment
-metadata: 
+metadata: # Блок метаданных деплоя
   name: ui
   labels:
     app: reddit
     component: ui
-spec: 
+spec:
   replicas: 3
   selector:
     matchLabels:
       app: reddit
       component: ui
-  template: 
+  template:
     metadata:
       name: ui-pod
       labels:
@@ -19,5 +19,10 @@ spec:
         component: ui
     spec:
       containers:
-      - image: nwomib/ui 
+      - image: nwomib/ui
         name: ui
+        env:
+        - name: ENV
+          valueFrom:
+            fieldRef:
+              fieldPath: metadata.namespace
