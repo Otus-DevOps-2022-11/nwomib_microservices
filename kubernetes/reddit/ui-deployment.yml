@@ -19,7 +19,7 @@ spec:
         component: ui
     spec:
       containers:
-      - image: nwomib/ui
+      - image: lbnvd13/ui
         name: ui
         env:
         - name: ENV
