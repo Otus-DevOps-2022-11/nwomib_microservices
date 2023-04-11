@@ -19,7 +19,7 @@ spec:
         component: comment
     spec:
       containers:
-      - image: nwomib/comment
+      - image: lbnvd13/comment
         name: comment
         env:
         - name: COMMENT_DATABASE_HOST
